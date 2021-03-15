@@ -62,7 +62,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void searchDomains(
       SearchDomainsRequest request, StreamObserver<SearchDomainsResponse> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof SearchDomainsResponse) {
       requests.add(request);
       responseObserver.onNext(((SearchDomainsResponse) response));
@@ -74,7 +74,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method SearchDomains, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   SearchDomainsResponse.class.getName(),
                   Exception.class.getName())));
     }
@@ -84,7 +84,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   public void retrieveRegisterParameters(
       RetrieveRegisterParametersRequest request,
       StreamObserver<RetrieveRegisterParametersResponse> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof RetrieveRegisterParametersResponse) {
       requests.add(request);
       responseObserver.onNext(((RetrieveRegisterParametersResponse) response));
@@ -96,7 +96,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method RetrieveRegisterParameters, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   RetrieveRegisterParametersResponse.class.getName(),
                   Exception.class.getName())));
     }
@@ -105,7 +105,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void registerDomain(
       RegisterDomainRequest request, StreamObserver<Operation> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
       responseObserver.onNext(((Operation) response));
@@ -117,7 +117,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method RegisterDomain, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
     }
@@ -127,7 +127,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   public void listRegistrations(
       ListRegistrationsRequest request,
       StreamObserver<ListRegistrationsResponse> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof ListRegistrationsResponse) {
       requests.add(request);
       responseObserver.onNext(((ListRegistrationsResponse) response));
@@ -139,7 +139,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method ListRegistrations, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   ListRegistrationsResponse.class.getName(),
                   Exception.class.getName())));
     }
@@ -148,7 +148,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void getRegistration(
       GetRegistrationRequest request, StreamObserver<Registration> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof Registration) {
       requests.add(request);
       responseObserver.onNext(((Registration) response));
@@ -160,7 +160,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method GetRegistration, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   Registration.class.getName(),
                   Exception.class.getName())));
     }
@@ -169,7 +169,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void updateRegistration(
       UpdateRegistrationRequest request, StreamObserver<Operation> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
       responseObserver.onNext(((Operation) response));
@@ -181,7 +181,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method UpdateRegistration, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
     }
@@ -190,7 +190,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void configureManagementSettings(
       ConfigureManagementSettingsRequest request, StreamObserver<Operation> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
       responseObserver.onNext(((Operation) response));
@@ -202,7 +202,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method ConfigureManagementSettings, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
     }
@@ -211,7 +211,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void configureDnsSettings(
       ConfigureDnsSettingsRequest request, StreamObserver<Operation> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
       responseObserver.onNext(((Operation) response));
@@ -223,7 +223,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method ConfigureDnsSettings, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
     }
@@ -232,7 +232,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void configureContactSettings(
       ConfigureContactSettingsRequest request, StreamObserver<Operation> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
       responseObserver.onNext(((Operation) response));
@@ -244,7 +244,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method ConfigureContactSettings, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
     }
@@ -253,7 +253,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void exportRegistration(
       ExportRegistrationRequest request, StreamObserver<Operation> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
       responseObserver.onNext(((Operation) response));
@@ -265,7 +265,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method ExportRegistration, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
     }
@@ -274,7 +274,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void deleteRegistration(
       DeleteRegistrationRequest request, StreamObserver<Operation> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
       responseObserver.onNext(((Operation) response));
@@ -286,7 +286,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method DeleteRegistration, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
     }
@@ -296,7 +296,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   public void retrieveAuthorizationCode(
       RetrieveAuthorizationCodeRequest request,
       StreamObserver<AuthorizationCode> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof AuthorizationCode) {
       requests.add(request);
       responseObserver.onNext(((AuthorizationCode) response));
@@ -308,7 +308,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method RetrieveAuthorizationCode, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   AuthorizationCode.class.getName(),
                   Exception.class.getName())));
     }
@@ -317,7 +317,7 @@ public class MockDomainsImpl extends DomainsImplBase {
   @Override
   public void resetAuthorizationCode(
       ResetAuthorizationCodeRequest request, StreamObserver<AuthorizationCode> responseObserver) {
-    Object response = responses.remove();
+    Object response = responses.poll();
     if (response instanceof AuthorizationCode) {
       requests.add(request);
       responseObserver.onNext(((AuthorizationCode) response));
@@ -329,7 +329,7 @@ public class MockDomainsImpl extends DomainsImplBase {
           new IllegalArgumentException(
               String.format(
                   "Unrecognized response type %s for method ResetAuthorizationCode, expected %s or %s",
-                  response.getClass().getName(),
+                  response == null ? "null" : response.getClass().getName(),
                   AuthorizationCode.class.getName(),
                   Exception.class.getName())));
     }

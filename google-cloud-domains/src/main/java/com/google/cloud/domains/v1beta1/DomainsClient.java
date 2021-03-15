@@ -705,6 +705,13 @@ public class DomainsClient implements BackgroundResource {
    *
    * <pre>{@code
    * try (DomainsClient domainsClient = DomainsClient.create()) {
+   *   ListRegistrationsRequest request =
+   *       ListRegistrationsRequest.newBuilder()
+   *           .setParent(LocationName.of("[PROJECT]", "[LOCATION]").toString())
+   *           .setPageSize(883849137)
+   *           .setPageToken("pageToken873572522")
+   *           .setFilter("filter-1274492040")
+   *           .build();
    *   while (true) {
    *     ListRegistrationsResponse response =
    *         domainsClient.listRegistrationsCallable().call(request);
