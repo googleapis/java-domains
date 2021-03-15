@@ -11,8 +11,8 @@
       "git": {
         "name": "googleapis-gen",
         "remote": "https://github.com/googleapis/googleapis-gen.git",
-        "sha": "452439e51b89a97d6f056a4300b0e32753a0fadd",
-        "internalRef": "357800868"
+        "sha": "9d14cd16d94886f7f10a243e1b5a6876946f32bb",
+        "internalRef": "358516065"
       }
     },
     {
@@ -92,6 +92,7 @@
     "codecov.yaml",
     "google-cloud-domains/src/main/java/com/google/cloud/domains/v1beta1/DomainsClient.java",
     "google-cloud-domains/src/main/java/com/google/cloud/domains/v1beta1/DomainsSettings.java",
+    "google-cloud-domains/src/main/java/com/google/cloud/domains/v1beta1/gapic_metadata.json",
     "google-cloud-domains/src/main/java/com/google/cloud/domains/v1beta1/package-info.java",
     "google-cloud-domains/src/main/java/com/google/cloud/domains/v1beta1/stub/DomainsStub.java",
     "google-cloud-domains/src/main/java/com/google/cloud/domains/v1beta1/stub/DomainsStubSettings.java",
