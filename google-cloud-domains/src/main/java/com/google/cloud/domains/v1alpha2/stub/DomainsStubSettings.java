@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.cloud.domains.v1beta1.stub;
+package com.google.cloud.domains.v1alpha2.stub;
 
-import static com.google.cloud.domains.v1beta1.DomainsClient.ListRegistrationsPagedResponse;
+import static com.google.cloud.domains.v1alpha2.DomainsClient.ListRegistrationsPagedResponse;
 
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
@@ -44,25 +44,25 @@ import com.google.api.gax.rpc.StubSettings;
 import com.google.api.gax.rpc.TransportChannelProvider;
 import com.google.api.gax.rpc.UnaryCallSettings;
 import com.google.api.gax.rpc.UnaryCallable;
-import com.google.cloud.domains.v1beta1.AuthorizationCode;
-import com.google.cloud.domains.v1beta1.ConfigureContactSettingsRequest;
-import com.google.cloud.domains.v1beta1.ConfigureDnsSettingsRequest;
-import com.google.cloud.domains.v1beta1.ConfigureManagementSettingsRequest;
-import com.google.cloud.domains.v1beta1.DeleteRegistrationRequest;
-import com.google.cloud.domains.v1beta1.ExportRegistrationRequest;
-import com.google.cloud.domains.v1beta1.GetRegistrationRequest;
-import com.google.cloud.domains.v1beta1.ListRegistrationsRequest;
-import com.google.cloud.domains.v1beta1.ListRegistrationsResponse;
-import com.google.cloud.domains.v1beta1.OperationMetadata;
-import com.google.cloud.domains.v1beta1.RegisterDomainRequest;
-import com.google.cloud.domains.v1beta1.Registration;
-import com.google.cloud.domains.v1beta1.ResetAuthorizationCodeRequest;
-import com.google.cloud.domains.v1beta1.RetrieveAuthorizationCodeRequest;
-import com.google.cloud.domains.v1beta1.RetrieveRegisterParametersRequest;
-import com.google.cloud.domains.v1beta1.RetrieveRegisterParametersResponse;
-import com.google.cloud.domains.v1beta1.SearchDomainsRequest;
-import com.google.cloud.domains.v1beta1.SearchDomainsResponse;
-import com.google.cloud.domains.v1beta1.UpdateRegistrationRequest;
+import com.google.cloud.domains.v1alpha2.AuthorizationCode;
+import com.google.cloud.domains.v1alpha2.ConfigureContactSettingsRequest;
+import com.google.cloud.domains.v1alpha2.ConfigureDnsSettingsRequest;
+import com.google.cloud.domains.v1alpha2.ConfigureManagementSettingsRequest;
+import com.google.cloud.domains.v1alpha2.DeleteRegistrationRequest;
+import com.google.cloud.domains.v1alpha2.ExportRegistrationRequest;
+import com.google.cloud.domains.v1alpha2.GetRegistrationRequest;
+import com.google.cloud.domains.v1alpha2.ListRegistrationsRequest;
+import com.google.cloud.domains.v1alpha2.ListRegistrationsResponse;
+import com.google.cloud.domains.v1alpha2.OperationMetadata;
+import com.google.cloud.domains.v1alpha2.RegisterDomainRequest;
+import com.google.cloud.domains.v1alpha2.Registration;
+import com.google.cloud.domains.v1alpha2.ResetAuthorizationCodeRequest;
+import com.google.cloud.domains.v1alpha2.RetrieveAuthorizationCodeRequest;
+import com.google.cloud.domains.v1alpha2.RetrieveRegisterParametersRequest;
+import com.google.cloud.domains.v1alpha2.RetrieveRegisterParametersResponse;
+import com.google.cloud.domains.v1alpha2.SearchDomainsRequest;
+import com.google.cloud.domains.v1alpha2.SearchDomainsResponse;
+import com.google.cloud.domains.v1alpha2.UpdateRegistrationRequest;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
