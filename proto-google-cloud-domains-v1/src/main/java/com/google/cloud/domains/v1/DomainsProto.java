@@ -462,8 +462,7 @@ public final class DomainsProto {
           + "\022DeleteRegistration\0222.google.cloud.domains.v1.DeleteRegistrationRequest\032\035.google.longrunning.Operation\"m\202\323\344\223\0023*1/v1/{name=projects/*/locations/*/registrations/*}\332A\004name\312A*\n"
           + "\025google.protobuf.Empty\022\021OperationMetadata\022\356\001\n"
           + "\031RetrieveAuthorizationCode\0229.google.cloud.domains.v1.RetrieveAuthorizationCodeRequest\032*.google.cloud.domains.v1.AuthorizationCode\"j\202\323\344\223\002U\022S/v1/{registration=projects/*/locations/*/registrations/*}:retrieveAuthorizationCode\332A\014registration\022\350\001\n"
-          + "\026ResetAuthorizationCode\0226.google.cloud.domains.v1.ResetAu"
-          + "thorizationCodeRequest\032*.google.cloud.domains.v1.AuthorizationCode\"j\202\323\344\223\002U\"P/v1/{registration=projects/*/locations/*/registrations/*}:resetAuthorizationCode:\001*\332A\014registration\032J\312A\026domains.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformBm\n"
+          + "\026ResetAuthorizationCode\0226.google.cloud.domains.v1.ResetAuthorizationCodeRequest\032*.google.cloud.domains.v1.AuthorizationCode\"j\202\323\344\223\002U\"P/v1/{registration=projects/*/locations/*/registrations/*}:resetAuthorizationCode:\001*\332A\014registration\032J\312A\026domains.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformBm\n"
           + "\033com.google.cloud.domains.v1B\014DomainsProtoP\001Z>google.golang.org/gen"
           + "proto/googleapis/cloud/domains/v1;domainsb\006proto3"
     };
