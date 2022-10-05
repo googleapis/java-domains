@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/googleapis/java-domains/compare/v1.0.5...v1.0.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([7df022b](https://github.com/googleapis/java-domains/commit/7df022b4241a6369c7a13c1c7b2fc4ece0ee49e0))
+
 ## [1.0.5](https://github.com/googleapis/java-domains/compare/v1.0.4...v1.0.5) (2022-10-03)
 
 
